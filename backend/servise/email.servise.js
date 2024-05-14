@@ -7,7 +7,7 @@ const createVerificationEmail = (receiverEmail, OTP) => {
         to: receiverEmail,
         subject: "Email Verification",
         text: "This is a verification Email from Scot.",
-        html: `<p>Your OTP for verification is ${OTP}. Valid for 10 minutes.</p>`,
+        html: `<h3>Your OTP for verification is ${OTP.OTP}. Valid for 10 minutes.</h3>`,
     };
     return email;
 };
